@@ -35,7 +35,7 @@ int main()
 
 	cin.ignore();
 	cin.get();
-	return 0:
+	return 0;
 }
 
 
