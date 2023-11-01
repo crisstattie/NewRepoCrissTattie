@@ -1,41 +1,82 @@
-// se dau 3 numere reale strict pozitive (a,b,c > 0)
-// sa se verif daca acestea pot reprezenta laturile unui triunghi
-// a+b>c, a+c>b, b+c>a
-
-// daca da, de care triunghi (isoscel, echilat, dreptunghic, oarecare)
-// calculati aria si perimetrul
-// p1 - decl variabile, p2 citire variabile, p3 - verif a,b,c > 0, verif 3 conditii (y - msg; n - msg)
-
-
 #include <iostream>
 using namespace std;
 int main()
+
 {
-	float a, b, c;
+	float a, b, rezultat, gresit;
+	char op;
 
-		cout << "dati cele 3 numere ";
-		cin >> a>>b>>c;
+	cout << "dati expresia";
+	cin >> a >> op >> b;
+	cout << a << op << b;
 
-		if (a > 0 && b > 0 && c > 0);
-			if (a + b > c && a + c > b && b + c > a);
-			{
-				cout << "avem un triunghi";
-				if (a==b&&b==c)
-					cout << "echilateral" endl;
-				else
-					if (a==b||a==c||b==c)
-						cout << "isoscel" endl;
-					else
-						if (a*a==b*b+c*c||b*b==c*c||c*c==a*a+b*b)
-							cout << "isoscel" endl;
-						else
-							cout << "oarecare" endl;
-...
+	if (op == '+')
+		rezultat = a + b;
 
+	else if (op == '-')
+		rezultat = a - b;
+
+	else if (op == '*')
+		rezultat = a - b;
+
+	else if (op == '/')
+		rezultat = a - b;
+
+	else
+		cout << "operator gresit" endl;
+		gresit = true
+
+	if (|gresit) cout << rezultat << endl;
+
+
+
+
+
+
+
+
+
+	return 0;
+}
+
+
+// Program to build a simple calculator using switch Statement
+#include <iostream>
+using namespace std;
+
+int main() 
+{
+	char op;
+	float a, b;
+	cout << "Enter an operator (+, -, *, /): ";
+	cin >> op;
+
+	switch (op)
+	{
+	case '+':
+		cout << a + b break;
+	case '-':
+		cout << a - b break;
+	case '*':
+		cout << a * b break;
+	case '/':
+		if (b |= 0)
+			cout << a / b;
+		else
+		{
+			cout << "impartire la 0" endl;
+			gresit = true;
+		}
+		break
+	default:
+		// operator is doesn't match any case constant (+, -, *, /)
+		cout << "opreratorul e gresit";
+		gresit = true;
+
+	}
+		break;
 
 	cin.ignore();
 	cin.get();
 	return 0;
 }
-
-
