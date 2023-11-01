@@ -1,5 +1,5 @@
-// 3 numere reale strict pozitive (a,b,c > 0)
-// sa se verif daca pot fi laturile unui triunghi
+// se dau 3 numere reale strict pozitive (a,b,c > 0)
+// sa se verif daca acestea pot reprezenta laturile unui triunghi
 // a+b>c, a+c>b, b+c>a
 
 // daca da, de care triunghi (isoscel, echilat, dreptunghic, oarecare)
@@ -13,25 +13,25 @@ int main()
 {
 	float a, b, c;
 
-		cout << "introdu lungimea laturii a ";
-		cin >> a;
-
-		cout << "introdu lungimea laturii b "; 
-		cin >> b;
-
-		cout << "introdu lungimea laturii c ";
-		cin >> c;
+		cout << "dati cele 3 numere ";
+		cin >> a>>b>>c;
 
 		if (a > 0 && b > 0 && c > 0);
 			if (a + b > c && a + c > b && b + c > a);
 			{
-				cout << "este un triunghi";
+				cout << "avem un triunghi";
+				if (a==b&&b==c)
+					cout << "echilateral" endl;
+				else
+					if (a==b||a==c||b==c)
+						cout << "isoscel" endl;
+					else
+						if (a*a==b*b+c*c||b*b==c*c||c*c==a*a+b*b)
+							cout << "isoscel" endl;
+						else
+							cout << "oarecare" endl;
+...
 
-
-			}
-	
-			else cout << "nu este un triunghi";
-		else cout << "nu numerele nu sunt strict pozitive" << endl;
 
 	cin.ignore();
 	cin.get();
