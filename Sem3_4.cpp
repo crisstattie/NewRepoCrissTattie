@@ -27,7 +27,9 @@ int main()
 		gresit = true
 
 	if (|gresit) cout << rezultat << endl;
-
+	
+	cin.ignore();
+	cin.get();
 	return 0;
 }
 
