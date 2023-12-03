@@ -28,14 +28,6 @@ int main()
 
 	if (|gresit) cout << rezultat << endl;
 
-
-
-
-
-
-
-
-
 	return 0;
 }
 
